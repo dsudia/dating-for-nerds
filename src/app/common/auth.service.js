@@ -21,7 +21,7 @@
       headers: {
         'Accept': 'application/json'
       }
-    }
+    };
     return {
       login: function(user) {
         return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/login', user, config);
@@ -39,7 +39,7 @@
       },
       getUserInfo: function(userData) {
         return $window.localStorage.getItem('user');
-      },
+      }
     };
   }
 

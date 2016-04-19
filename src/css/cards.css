@@ -207,8 +207,8 @@ hr {
   transition: all 0.2s ease-in-out; }
   .card .card-image {
     background-color: #F8F2B4;
-    height: 150px;
-    max-height: 150px;
+    height: 300px;
+    max-height: 300px;
     overflow: hidden; }
     .card .card-image img {
       border-top-left-radius: 3px;

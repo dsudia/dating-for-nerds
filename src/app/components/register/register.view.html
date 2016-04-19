@@ -1,0 +1,22 @@
+<section class="register">
+  <h1>Register</h1>
+  <hr>
+  <form ng-submit="register()">
+    <label for="username">Username</label>
+    <input type="text" id="username" ng-model="user.username" placeholder="marysue135" required>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" ng-model="user.names.firstName" placeholder="Mary" required>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" ng-model="user.names.lastName" placeholder="Hernandez">
+    <label for="avatar">Profile Picture</label>
+    <input type="text" id="avatar" ng-model="user.avatar" placeholder="http://www.images.com/myimage">
+    <label for="email">Email</label>
+    <input type="email" id="email" ng-model="user.email" placeholder="mary@sue.com" required>
+    <label for="password">Password</label>
+    <input type="password" id="password" ng-model="user.password" required>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" ng-model="user.dob" required>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" ng-model="user.dob" required>
+  </form>
+</section>

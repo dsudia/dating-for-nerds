@@ -189,25 +189,6 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
-.wrapper-for-content-outside-of-footer {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em; }
-
-html, body {
-  height: 100%; }
-
-.wrapper-for-content-outside-of-footer::after {
-  content: "";
-  display: block; }
-
-.footer-2, .wrapper-for-content-outside-of-footer::after {
-  height: 17em; }
-  @media screen and (min-width: 900px) {
-    .footer-2, .wrapper-for-content-outside-of-footer::after {
-      height: 4em; } }
-
 .footer-2 {
   background: #1c3653;
   display: inline-block;

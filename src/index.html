@@ -3,13 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>Untitled</title>
-    
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
   </head>
   <body>
 
-  <div ui-view></div>
-    
+    <div class="wrapper-for-content-outside-of-footer">
+      <header class="navigation" role="banner">
+        <div class="navigation-wrapper">
+          <a href="javascript:void(0)" class="logo">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+          </a>
+          <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+          <nav role="navigation">
+            <ul id="js-navigation-menu" class="navigation-menu show">
+              <li class="nav-link"><a href="javascript:void(0)">Dating for Nerds</a></li>
+              <li class="nav-link"><a href="javascript:void(0)">Login</a></li>
+              <li class="nav-link"><a href="javascript:void(0)">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div ui-view></div>
+    </div>
+
+    <footer class="footer-2" role="contentinfo">
+      <div class="footer-logo">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+      </div>
+      <ul>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
+      </ul>
+
+      <div class="footer-secondary-links">
+        <ul>
+          <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+
+        <ul class="footer-social">
+          <li><a href="javascript:void(0)">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+          <li><a href="javascript:void(0)">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+          </a></li>
+          <li><a href="javascript:void(0)">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+          </a></li>
+        </ul>
+      </div>
+    </footer>
+
+
     <script type="text/javascript" src="../angular.js"></script>
     <script type="text/javascript" src="../angular-mocks.js"></script>
     <script type="text/javascript" src="../angular-ui-router.js"></script>

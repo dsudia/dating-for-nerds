@@ -44,17 +44,10 @@ gulp.task('jshint', function() {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('sass', function () {
-  return gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/css'));
-});
-
 gulp.task('watch', function() {
   gulp.watch('./src/app/*.app', ['jshint']);
   gulp.watch(['./src/*.html'], ['html']);
-  gulp.watch('./src/scss/*.scss', ['sass']);
-  gulp.watch(['./src/css/*.css'], ['css']);
+  gulp.watch(['./src/css/'], ['css']);
 
 });
 

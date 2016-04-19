@@ -11,6 +11,10 @@
       .state('landing', {
         url: '/',
         template: '<landing></landing>'
+      })
+      .state('landing.login', {
+        url:'/login',
+        template: '<login></login>'
       });
   });
 

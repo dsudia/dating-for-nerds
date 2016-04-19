@@ -2,6 +2,10 @@
 @import 'neat/neat';
 @import 'base/base';
 
-h5 {
-  list-style: none;
+.login {
+  $action-color: #477DCA !default;
+  width: 20rem;
+  height: 10rem;
+  background-color: desaturate(darken($action-color, 20%), 30%);
+  color: white;
 }

@@ -189,5 +189,8 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
-h5 {
-  list-style: none; }
+.login {
+  width: 20rem;
+  height: 10rem;
+  background-color: #1c3653;
+  color: white; }

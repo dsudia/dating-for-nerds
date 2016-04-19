@@ -17,9 +17,14 @@
 
   function authService($http, $window) {
     var user = {};
+    var config = {
+      headers: {
+        'Accept': 'application/json'
+      }
+    }
     return {
       login: function(user) {
-        return $http.post('/auth/login', user);
+        return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/login', user, config);
       },
       logout: function(user) {
         user = null;

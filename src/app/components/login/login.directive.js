@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('gDating').directive('login', function() {
+  angular.module('gDating').directive('login', ['$animate', function() {
     return {
       restrict: 'E',
       templateUrl: 'app/components/login/login.view.html',
@@ -22,6 +22,6 @@
         };
       }
     }
-  });
+  }]);
 
 })();

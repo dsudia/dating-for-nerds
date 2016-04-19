@@ -190,7 +190,16 @@ hr {
   margin: 1.5em 0; }
 
 .login {
-  width: 20rem;
-  height: 10rem;
+  width: 40rem;
+  height: 20rem;
+  padding: 2rem;
   background-color: #1c3653;
-  color: white; }
+  color: white;
+  position: absolute;
+  top: 5rem;
+  right: 20rem;
+  z-index: 1; }
+  .login form input {
+    color: black; }
+  .login form input[type="submit"] {
+    color: white; }

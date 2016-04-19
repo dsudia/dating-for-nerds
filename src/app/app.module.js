@@ -5,11 +5,11 @@
   angular.module('gDating', ['ui.router', 'angular-refills']);
 
   angular.module('gDating').config(($stateProvider, $urlRouterProvider) => {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
       .state('landing', {
-        url: '/',
+        url: '/home',
         template: '<landing></landing>'
       })
       .state('landing.login', {

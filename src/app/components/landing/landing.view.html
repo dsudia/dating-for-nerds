@@ -1,12 +1,13 @@
+<div ui-view></div>
 <div class="hero">
   <div class="hero-inner">
     <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
 " alt="Logo Image"></a>
     <div class="hero-copy">
       <h1>Dating for Nerds</h1>
-      <button>Get Started!</button>
+      <a ui-sref="#"><button>Get Started!</button></a>
     </div>
-    <div ui-view></div>
+
   </div>
 </div>
 <br>
@@ -16,7 +17,7 @@
       <img ng-src="{{user.avatar}}" alt="user picture">
   </div>
     <div class="card-header">
-      First Card
+      {{user.names.firstName}}
     </div>
     <div class="card-copy">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>

@@ -205,7 +205,8 @@ hr {
     margin-right: auto;
     margin: auto;
     padding: 3.5em;
-    text-align: center; }
+    text-align: center;
+    z-index: -1; }
     .hero .hero-inner::after {
       clear: both;
       content: "";
@@ -215,11 +216,13 @@ hr {
       content: "";
       display: block; }
     .hero .hero-inner .hero-copy {
-      text-align: center; }
+      text-align: center;
+      z-index: -1; }
       .hero .hero-inner .hero-copy h1 {
         color: white;
         font-size: 1.6em;
-        margin-bottom: 0.5em; }
+        margin-bottom: 0.5em;
+        z-index: -1; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy h1 {
             font-size: 1.8em; } }
@@ -227,7 +230,8 @@ hr {
         color: white;
         background-color: #324766;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; }
+        margin: 0 auto 3em auto;
+        z-index: -1; }
         @media screen and (min-width: 900px) {
           .hero .hero-inner .hero-copy button {
             font-size: 1.1em;

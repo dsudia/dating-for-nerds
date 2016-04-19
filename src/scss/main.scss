@@ -4,8 +4,21 @@
 
 .login {
   $action-color: #477DCA !default;
-  width: 20rem;
-  height: 10rem;
+  width: 40rem;
+  height: 20rem;
+  padding: 2rem;
   background-color: desaturate(darken($action-color, 20%), 30%);
   color: white;
+  position: absolute;
+  top: 5rem;
+  right: 20rem;
+  z-index: 1;
+  form {
+    input {
+      color: black;
+    }
+    input[type="submit"] {
+      color: white;
+    }
+  }
 }

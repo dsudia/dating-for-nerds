@@ -39,7 +39,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('jshint', function() {
-  return gulp.src('./src/js/*.js')
+  return gulp.src('./src/app/*.app')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -51,7 +51,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/js/*.js', ['jshint']);
+  gulp.watch('./src/app/*.app', ['jshint']);
   gulp.watch(['./src/*.html'], ['html']);
   gulp.watch('./src/scss/*.scss', ['sass']);
   gulp.watch(['./src/css/*.css'], ['css']);
@@ -70,10 +70,10 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('minify-js', function() {
-  gulp.src('./src/js/*.js')
+gulp.task('minify-app', function() {
+  gulp.src('./src/app/*.app')
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./dist/app/'));
 });
 
 gulp.task('copy-html-files', function () {
@@ -90,7 +90,7 @@ gulp.task('build', function() {
     ['clean'],
     ['jshint'],
     ['minify-css'],
-    ['minify-js'],
+    ['minify-app'],
     ['copy-html-files'],
     ['connectDist']
   );

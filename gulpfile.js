@@ -53,7 +53,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   gulp.watch('./src/js/*.js', ['jshint']);
   gulp.watch(['./src/*.html'], ['html']);
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./src/scss/*.scss', ['sass']);
   gulp.watch(['./src/css/*.css'], ['css']);
 
 });

@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('gDating').directive('landing', function() {
+  angular.module('gDating').directive('browse', function() {
     return {
       restrict: 'E',
       templateUrl: 'app/components/browse/browse.view.html',

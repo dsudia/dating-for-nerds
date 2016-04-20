@@ -17,6 +17,21 @@
          .catch(function(err) {
            console.log(err);
          });
+     },
+
+     getAllMembers: function() {
+       var config = {
+         headers: {
+           'Accept': 'application/json'
+         }
+       };
+       return $http('https://galvanize-student-apis.herokuapp.com/gdating/members', config)
+         .then(function(profiles) {
+           return data.data.data;
+         })
+         .catch(function(err) {
+           console.log(err);
+         });
      }
    }
   }

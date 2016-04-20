@@ -25,9 +25,9 @@
            'Accept': 'application/json'
          }
        };
-       return $http('https://galvanize-student-apis.herokuapp.com/gdating/members', config)
+       return $http.get('https://galvanize-student-apis.herokuapp.com/gdating/members', config)
          .then(function(profiles) {
-           return data.data.data;
+           return profiles.data.data;
          })
          .catch(function(err) {
            console.log(err);

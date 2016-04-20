@@ -37,6 +37,21 @@
   }
 }
 
+.profile-preview {
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  width: 60%;
+  text-align: center;
+  background-color: desaturate(darken($action-color, 20%), 30%);
+  color: transparentize(white, 0.3);
+  img {
+    display: inline-block;
+    margin: 0 1rem;
+    border-radius: 1rem;
+  }
+}
+
 .profile-selection {
   height: 100vh;
   width: 65%;

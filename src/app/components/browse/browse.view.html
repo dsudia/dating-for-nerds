@@ -7,10 +7,9 @@
       <a href="javascript:void(0)"><li>My Matches</li></a>
       <a href="javascript:void(0)"><li>Chatting</li></a>
     </ul>
-    <article ng-repeat="profile in profiles">
-      <img ng-src="{{profile.image}}">
-      <h4>{{profile.username}}</h4>
-      <p>{{profile.description}}</p>
+    <article class="profile-preview" ng-repeat="profile in profiles">
+      <h5>{{profile.username}}</h5>
+      <img ng-src="{{profile.avatar}}">
     </article>
   </section>
   <section class="profile-selection">

@@ -7,7 +7,7 @@
       <a href="javascript:void(0)"><li>My Matches</li></a>
       <a href="javascript:void(0)"><li>Chatting</li></a>
     </ul>
-    <article class="profile-preview" ng-repeat="profile in profiles">
+    <article class="profile-preview" ng-repeat="profile in profiles | limitTo : 4">
       <h5>{{profile.username}}</h5>
       <img ng-src="{{profile.avatar}}">
     </article>

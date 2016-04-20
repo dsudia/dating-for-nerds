@@ -9,7 +9,6 @@
       controller: function($scope, memberRequests) {
         memberRequests.getAllMembers()
           .then((data) => {
-            console.log(data);
             $scope.profiles = data;
           })
           .catch((err) => {

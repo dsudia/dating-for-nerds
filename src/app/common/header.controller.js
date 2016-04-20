@@ -10,6 +10,8 @@
     
     $rootScope.currentUser = authService.getUserInfo();
 
+    console.log($rootScope.currentUser);
+
     $scope.logout = function() {
       authService.logout();
       $rootScope.currentUser = null;

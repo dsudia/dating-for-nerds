@@ -1,18 +1,20 @@
 <section>
   <section class="profile-list">
     <ul class="sort-menu">
-      <a href="javascript:void(0)"><li>All</li></a>
-      <a href="javascript:void(0)"><li>Popular</li></a>
-      <a href="javascript:void(0)"><li>Near Me</li></a>
-      <a href="javascript:void(0)"><li>My Matches</li></a>
-      <a href="javascript:void(0)"><li>Chatting</li></a>
+      <a ng-click="sort = 'username'" href="javascript:void(0)"><li>All</li></a>
+      <a ng-click="sort = '_matches.length()'" href="javascript:void(0)"><li>Popular</li></a>
+      <a ng-click="sort = ''" href="javascript:void(0)"><li>Near Me</li></a>
+      <a ng-click="sort = ''" href="javascript:void(0)"><li>My Matches</li></a>
+      <a ng-click="sort = ''" href="javascript:void(0)"><li>Chatting</li></a>
     </ul>
-    <article class="profile-preview" ng-repeat="profile in profiles | limitTo : 4">
+    <article class="profile-preview" ng-repeat="profile in profiles | orderBy : sort | limitTo : 4">
+      <a ui-sref="browse.profile({ user: profile.slug })">
       <h5>{{profile.username}}</h5>
       <img ng-src="{{profile.avatar}}">
+        </a>
     </article>
   </section>
   <section class="profile-selection">
-
+    <div ui-view></div>
   </section>
 </section>

@@ -14,7 +14,7 @@
         authenticate: true
       })
       .state('landing.login', {
-        url:'/login',
+        url: '/login',
         template: '<login></login>',
         authenticate: false
       })
@@ -22,6 +22,10 @@
         url: '/browse',
         template: '<browse></browse>',
         authenticate: true
+      })
+      .state('browse.profile', {
+        url: '/profile/:user',
+        template: '<oneProfile></oneProfile>'
       });
   });
 

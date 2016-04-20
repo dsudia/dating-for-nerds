@@ -207,7 +207,8 @@ hr {
 .profile-list {
   width: 35%;
   height: 100vh;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #f5d6eb; }
 
 .sort-menu li {
   display: inline;

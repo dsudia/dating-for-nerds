@@ -6,15 +6,19 @@
     return {
       restrict: 'E',
       templateUrl: 'app/components/browse/browse.view.html',
-      controller: function($scope, memberRequests) {
+      controller: function($rootScope, $scope, memberRequests) {
         memberRequests.getAllMembers()
           .then((data) => {
-            $scope.profiles = data;
+            $rootScope.profiles = data;
           })
           .catch((err) => {
             console.log(err);
           });
+
+        $scope.sort = 'username';
       }
+
+
     }
   });
 

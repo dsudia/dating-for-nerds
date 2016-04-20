@@ -22,11 +22,11 @@
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
+      <ul id="js-navigation-menu" ng-controller="headerCtrl" class="navigation-menu show">
         <li class="nav-link"><a ui-sref="landing">Dating for Nerds</a></li>
         <li ng-hide="currentUser" class="nav-link"><a ui-sref="landing.login">Login</a></li>
         <li ng-hide="currentUser" class="nav-link"><a href="javascript:void(0)">Register</a></li>
-        <li ng-show="currentUser" class="nav-link"><a ui-sref="logout">Logout</a></li>
+        <li ng-show="currentUser" ng-click="logout()" class="nav-link"><a href="javascript:void(0)">Logout</a></li>
       </ul>
     </nav>
   </div>
@@ -72,6 +72,7 @@
 <script type="text/javascript" src="resources/scripts/angular-ui-router.js"></script>
 <script type="text/javascript" src="resources/scripts/angular-refills.js"></script>
 <script type="text/javascript" src="app/app.module.js"></script>
+<script type="text/javascript" src="app/common/header.controller.js"></script>
 <script type="text/javascript" src="app/components/landing/landing.directive.js"></script>
 <script type="text/javascript" src="app/components/login/login.directive.js"></script>
 <script type="text/javascript" src="app/common/members.service.js"></script>

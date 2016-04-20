@@ -15,6 +15,10 @@
       .state('landing.login', {
         url:'/login',
         template: '<login></login>'
+      })
+      .state('browse', {
+        url: '/browse',
+        template: '<browse></browse>'
       });
   });
 

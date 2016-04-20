@@ -1,0 +1,19 @@
+<section>
+  <section class="profile-list">
+    <ul class="sort-menu">
+      <li>All</li>
+      <li>Popular</li>
+      <li>Near Me</li>
+      <li>My Matches</li>
+      <li>Chatting</li>
+    </ul>
+    <article ng-repeat="profile in profiles">
+      <img ng-src="{{profile.image}}">
+      <h4>{{profile.username}}</h4>
+      <p>{{profile.description}}</p>
+    </article>
+  </section>
+  <section class="profile-selection">
+
+  </section>
+</section>

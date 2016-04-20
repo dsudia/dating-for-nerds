@@ -7,6 +7,9 @@
   headerCtrl.$inject = ['$rootScope', '$scope', '$state', 'authService'];
 
   function headerCtrl($rootScope, $scope, $state, authService) {
+    
+    $rootScope.currentUser = authService.getUserInfo();
+
     $scope.logout = function() {
       authService.logout();
       $rootScope.currentUser = null;

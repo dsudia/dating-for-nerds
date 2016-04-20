@@ -10,15 +10,18 @@
     $stateProvider
       .state('landing', {
         url: '/home',
-        template: '<landing></landing>'
+        template: '<landing></landing>',
+        authenticate: true
       })
       .state('landing.login', {
         url:'/login',
-        template: '<login></login>'
+        template: '<login></login>',
+        authenticate: false
       })
       .state('browse', {
         url: '/browse',
-        template: '<browse></browse>'
+        template: '<browse></browse>',
+        authenticate: true
       });
   });
 

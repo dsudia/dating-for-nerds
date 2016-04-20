@@ -24,8 +24,9 @@
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
         <li class="nav-link"><a ui-sref="landing">Dating for Nerds</a></li>
-        <li class="nav-link"><a ui-sref="landing.login">Login</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Register</a></li>
+        <li ng-hide="currentUser" class="nav-link"><a ui-sref="landing.login">Login</a></li>
+        <li ng-hide="currentUser" class="nav-link"><a href="javascript:void(0)">Register</a></li>
+        <li ng-show="currentUser" class="nav-link"><a ui-sref="logout">Logout</a></li>
       </ul>
     </nav>
   </div>

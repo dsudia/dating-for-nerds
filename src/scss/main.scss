@@ -23,45 +23,16 @@
   }
 }
 
-.profile-list {
-  width: 35%;
-  height: 100vh;
-  display: inline-block;
-  background-color: #f5d6eb;
-}
-
-.sort-menu {
-  li {
-    display: inline;
-    border-bottom: .1rem solid gray;
-    margin: .2rem .2rem;
+.my-profile-container {
+  @include outer-container;
+  padding: 1rem;
+  .my-profile-form {
+    @include span-columns(6);
+    padding: 1rem;
   }
-}
-
-.profile-preview {
-  margin: 1rem 2rem;
-  border-radius: 1rem;
-  padding: .5rem;
-  width: 60%;
-  text-align: center;
-  background-color: desaturate(darken($action-color, 20%), 30%);
-  color: transparentize(white, 0.3);
-  img {
-    display: inline-block;
-    margin: 0 1rem;
-    border-radius: 1rem;
-  }
-}
-
-.profile-selection {
-  height: 100vh;
-  width: 65%;
-  float: right;
-  background-image: url('../resources/imgs/browse-background.jpg');
-  background-size: cover;
-  h5 {
-    text-align: center;
-    margin: .1rem 0;
+  .my-profile-information {
+    @include span-columns(6);
+    padding: 1rem;
   }
 }
 
@@ -93,6 +64,40 @@
   }
 }
 
+.profile-list {
+  width: 35%;
+  height: 100vh;
+  display: inline-block;
+  background-color: #f5d6eb;
+}
+
+.profile-preview {
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  width: 60%;
+  text-align: center;
+  background-color: desaturate(darken($action-color, 20%), 30%);
+  color: transparentize(white, 0.3);
+  img {
+    display: inline-block;
+    margin: 0 1rem;
+    border-radius: 1rem;
+  }
+}
+
+.profile-selection {
+  height: 100vh;
+  width: 65%;
+  float: right;
+  background-image: url('../resources/imgs/browse-background.jpg');
+  background-size: cover;
+  h5 {
+    text-align: center;
+    margin: .1rem 0;
+  }
+}
+
 .search-box {
   background-color: saturate(lighten(#f5d6eb, 5%), 30%);
   padding: 2rem;
@@ -102,15 +107,10 @@
   left: 5%;
 }
 
-.my-profile-container {
-  @include outer-container;
-  padding: 1rem;
-  .my-profile-form {
-    @include span-columns(6);
-    padding: 1rem;
-  }
-  .my-profile-information {
-    @include span-columns(6);
-    padding: 1rem;
+.sort-menu {
+  li {
+    display: inline;
+    border-bottom: .1rem solid gray;
+    margin: .2rem .2rem;
   }
 }

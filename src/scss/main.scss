@@ -101,3 +101,16 @@
   top: 7rem;
   left: 5%;
 }
+
+.my-profile-container {
+  @include outer-container;
+  padding: 1rem;
+  .my-profile-form {
+    @include span-columns(6);
+    padding: 1rem;
+  }
+  .my-profile-information {
+    @include span-columns(6);
+    padding: 1rem;
+  }
+}

@@ -32,6 +32,13 @@
          .catch(function(err) {
            console.log(err);
          });
+     },
+
+     getOneProfile: function($window, slug) {
+       var data = JSON.parse($window.localStorage.getItem('profiles'));
+       return data.filter((el) => {
+         return el.slug === slug;
+       });
      }
    }
   }

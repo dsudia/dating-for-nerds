@@ -30,6 +30,10 @@
       .state('browse.search', {
         url: 'profile/search',
         template: '<search></search>'
+      })
+      .state('myProfile', {
+        url: '/myprofile',
+        template: '<my-profile></my-profile>'
       });
   });
 

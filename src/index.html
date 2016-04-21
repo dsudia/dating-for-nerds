@@ -29,7 +29,7 @@
         <li ng-hide="currentUser" class="nav-link"><a href="javascript:void(0)">Register</a></li>
         <li ng-show="currentUser" ng-click="logout()" class="nav-link"><a href="javascript:void(0)">Logout</a></li>
         <li ng-show="currentUser" class="nav-link"><a ui-sref="browse">Browse Profiles</a></li>
-        <li ng-show="currentUser" class="nav-link"><a href="javascript:void(0)">My Profile</a></li>
+        <li ng-show="currentUser" class="nav-link"><a ui-sref="myProfile"">My Profile</a></li>
       </ul>
     </nav>
   </div>
@@ -82,6 +82,8 @@
 <script type="text/javascript" src="app/components/browse/browse.filters.js"></script>
 <script type="text/javascript" src="app/components/oneProfile/oneProfile.directive.js"></script>
 <script type="text/javascript" src="app/components/search/search.directive.js"></script>
+<script type="text/javascript" src="app/components/myProfile/myProfile.directive.js"></script>
+<script type="text/javascript" src="app/components/myProfile/myProfile.filters.js"></script>
 <script type="text/javascript" src="app/common/members.service.js"></script>
 <script type="text/javascript" src="app/common/auth.service.js"></script>
 </body>

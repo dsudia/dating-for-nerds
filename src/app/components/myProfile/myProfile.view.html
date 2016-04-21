@@ -1,0 +1,32 @@
+<section class="my-profile-container">
+  <section class="my-profile-form">
+    <h3>Edit Account</h3>
+    <form>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" ng-model="currentUser.names.firstName">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" ng-model="currentUser.names.lastName">
+      <label for="username">Username</label>
+      <input type="text" id="username" ng-model="currentUser.username">
+      <label for="avatar">Avatar</label>
+      <input type="text" id="avatar" ng-model="currentUser.avatar">
+      <label for="email">Email</label>
+      <input type="email" id="email" ng-model="currentUser.email">
+      <label for="gender">Gender</label>
+      <select id="gender" ng-model="currentUser.gender">
+        <option value="0" selected>Guy</option>
+        <option value="1">Gal</option>
+        <option value="2">Androgynous</option>
+        <option value="3">Doesn't Say</option>
+      </select>
+    </form>
+  </section>
+  <section class="my-profile-information">
+    <h3>{{currentUser.username}}</h3>
+    <img ng-src="{{currentUser.avatar}}">
+    <p>{{currentUser.names.firstName}}</p>
+    <p>{{currentUser.names.lastName}}</p>
+    <p>{{currentUser.email}}</p>
+    <p>{{currentUser.gender | gender}}</p>
+  </section>
+</section>

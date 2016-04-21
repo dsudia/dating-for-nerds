@@ -7,7 +7,7 @@
       <a ng-click="sort = ''" href="javascript:void(0)"><li>My Matches</li></a>
       <a ng-click="sort = ''" href="javascript:void(0)"><li>Chatting</li></a>
     </ul>
-    <article class="profile-preview" ng-repeat="profile in profiles | orderBy : sort | limitTo : 4">
+    <article class="profile-preview" ng-repeat="profile in profiles | filter : search | orderBy : sort | limitTo : 4">
       <a ui-sref="browse.profile({user: profile.slug})">
       <h5>{{profile.username}}</h5>
       <img ng-src="{{profile.avatar}}">

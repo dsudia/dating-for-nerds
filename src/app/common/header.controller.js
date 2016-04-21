@@ -14,7 +14,7 @@
     $scope.logout = function() {
       authService.logout();
       $rootScope.currentUser = null;
-      $state.go('landing');
+      $state.go('browse');
     }
   }
   

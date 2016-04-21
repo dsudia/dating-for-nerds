@@ -234,6 +234,9 @@ hr {
   float: right;
   background-image: url("../resources/imgs/browse-background.jpg");
   background-size: cover; }
+  .profile-selection h5 {
+    text-align: center;
+    margin: .1rem 0; }
 
 .one-profile {
   background-color: #fee7f6;
@@ -255,3 +258,11 @@ hr {
   .one-profile button {
     background-color: red;
     margin: 0 1rem; }
+
+.search-box {
+  background-color: #fee7f6;
+  padding: 2rem;
+  width: 90%;
+  position: relative;
+  top: 7rem;
+  left: 5%; }

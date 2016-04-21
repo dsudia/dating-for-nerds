@@ -59,6 +59,10 @@
   float: right;
   background-image: url('../resources/imgs/browse-background.jpg');
   background-size: cover;
+  h5 {
+    text-align: center;
+    margin: .1rem 0;
+  }
 }
 
 .one-profile {
@@ -87,4 +91,13 @@
     background-color: red;
     margin: 0 1rem;
   }
+}
+
+.search-box {
+  background-color: saturate(lighten(#f5d6eb, 5%), 30%);
+  padding: 2rem;
+  width: 90%;
+  position: relative;
+  top: 7rem;
+  left: 5%;
 }

@@ -10,17 +10,17 @@
     <select id="gender">
       <option value="" disabled selected>-- Gender --</option>
       <option value="male">Guy</option>
-      <option value="female">Girl</option>
+      <option value="female">Gal</option>
     </select>
     <label for="age-low">Age</label>
     <span class="nullable">
-      <select id="age-low" ng-model="searchAgeLow" ng-options="age in ages">
+      <select id="age-low" ng-model="searchAgeLow" ng-options="age for age in ages">
         <option value="">-- Low --</option>
       </select>
     </span>
     <span> to </span>
     <span class="nullable">
-      <select ng-model="searchAgeHigh" ng-options="age in ages">
+      <select ng-model="searchAgeHigh" ng-options="age for age in ages">
         <option value="">-- High --</option>
       </select>
     </span>

@@ -1,0 +1,37 @@
+<section class="search-box">
+  <h1>Search Profiles</h1>
+  <hr>
+  <form>
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="benwyatt15">
+    <label for="email">Username</label>
+    <input type="email" id="email" placeholder="benwyatt15@gmail.com">
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option value="" disabled selected>-- Gender --</option>
+      <option value="male">Guy</option>
+      <option value="female">Girl</option>
+    </select>
+    <label for="age-low">Age</label>
+    <span class="nullable">
+      <select id="age-low" ng-model="searchAgeLow" ng-options="age in ages">
+        <option value="">-- Low --</option>
+      </select>
+    </span>
+    <span> to </span>
+    <span class="nullable">
+      <select ng-model="searchAgeHigh" ng-options="age in ages">
+        <option value="">-- High --</option>
+      </select>
+    </span>
+    <p>Search Type</p>
+    <label>
+      <input type="radio" ng-model="searchType" value="false">
+        Any of the above can match
+    </label>
+    <label>
+      <input type="radio" ng-model="searchType" value="false">
+      All of the above must match
+    </label>
+  </form>
+</section>

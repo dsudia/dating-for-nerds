@@ -26,6 +26,10 @@
       .state('browse.profile', {
         url: '/profile/:user',
         template: '<one-profile></one-profile>'
+      })
+      .state('browse.search', {
+        url: 'profile/search',
+        template: '<search></search>'
       });
   });
 

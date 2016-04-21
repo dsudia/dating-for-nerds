@@ -3,9 +3,9 @@
     <img ng-src="{{profile.avatar}}">
     <section class="one-profile-block">
       <h5>{{profile.username}}</h5>
-      <p><span class="one-profile-pop">Popular</span><span class="one-profile-near">Near You!</span><span class="one-profile-likes">Likes you!</span></p>
+      <p><span ng-show="(profile._matches.length > 10)" class="one-profile-pop">Popular</span><span class="one-profile-near">Near You!</span><span ng-hide="(profile._matches.indexOf(currentUser._id) === -1)" class="one-profile-likes">Likes you!</span></p>
       <button ng-show="(profile._matches.indexOf(currentUser._id) === -1)" class="one-profile-match-button">Match Me!</button>
-      <i ng-hide="(profile._matches.indexOf(currentUser._id) === -1)" class="fa fa-heart one-profile-matched" aria-hidden="true"></i>
+      <i ng-hide="(currentUser._matches.indexOf(profile._id) === -1)" class="fa fa-heart one-profile-matched" aria-hidden="true"></i>
     </section>
     <hr>
   </section>

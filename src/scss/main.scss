@@ -72,10 +72,10 @@
     display: inline-block;
   }
   span {
-    margin: 0 .2rem;
+    margin: 0 1rem;
   }
-  .one-profile-block {
-    float: right;
+  .one-profile-summary img {
+    display: inline;
   }
   .one-profile-pop {
     color: blue;
@@ -85,5 +85,6 @@
   }
   button {
     background-color: red;
+    margin: 0 1rem;
   }
 }

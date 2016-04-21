@@ -245,12 +245,13 @@ hr {
   .one-profile p {
     display: inline-block; }
   .one-profile span {
-    margin: 0 .2rem; }
-  .one-profile .one-profile-block {
-    float: right; }
+    margin: 0 1rem; }
+  .one-profile .one-profile-summary img {
+    display: inline; }
   .one-profile .one-profile-pop {
     color: blue; }
   .one-profile .one-profile-likes {
     color: red; }
   .one-profile button {
-    background-color: red; }
+    background-color: red;
+    margin: 0 1rem; }

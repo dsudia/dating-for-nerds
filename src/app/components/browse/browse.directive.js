@@ -23,8 +23,6 @@
         }
         $scope.sort = 'username';
       }
-
-
     }
   });
 

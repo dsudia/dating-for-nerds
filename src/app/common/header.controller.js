@@ -9,8 +9,7 @@
   function headerCtrl($rootScope, $scope, $state, authService) {
     
     $rootScope.currentUser = authService.getUserInfo();
-
-    console.log($rootScope.currentUser);
+    $rootScope.currentUser = JSON.parse($rootScope.currentUser);
 
     $scope.logout = function() {
       authService.logout();

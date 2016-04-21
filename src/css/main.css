@@ -204,69 +204,6 @@ hr {
   .login form input[type="submit"] {
     color: white; }
 
-.profile-list {
-  width: 35%;
-  height: 100vh;
-  display: inline-block;
-  background-color: #f5d6eb; }
-
-.sort-menu li {
-  display: inline;
-  border-bottom: .1rem solid gray;
-  margin: .2rem .2rem; }
-
-.profile-preview {
-  margin: 1rem 2rem;
-  border-radius: 1rem;
-  padding: .5rem;
-  width: 60%;
-  text-align: center;
-  background-color: #1c3653;
-  color: rgba(255, 255, 255, 0.7); }
-  .profile-preview img {
-    display: inline-block;
-    margin: 0 1rem;
-    border-radius: 1rem; }
-
-.profile-selection {
-  height: 100vh;
-  width: 65%;
-  float: right;
-  background-image: url("../resources/imgs/browse-background.jpg");
-  background-size: cover; }
-  .profile-selection h5 {
-    text-align: center;
-    margin: .1rem 0; }
-
-.one-profile {
-  background-color: #fee7f6;
-  padding: 2rem;
-  width: 80%;
-  position: relative;
-  top: 7rem;
-  left: 10%; }
-  .one-profile p {
-    display: inline-block; }
-  .one-profile span {
-    margin: 0 1rem; }
-  .one-profile .one-profile-summary img {
-    display: inline; }
-  .one-profile .one-profile-pop {
-    color: blue; }
-  .one-profile .one-profile-likes {
-    color: red; }
-  .one-profile button {
-    background-color: red;
-    margin: 0 1rem; }
-
-.search-box {
-  background-color: #fee7f6;
-  padding: 2rem;
-  width: 90%;
-  position: relative;
-  top: 7rem;
-  left: 5%; }
-
 .my-profile-container {
   max-width: 1200px;
   margin-left: auto;
@@ -292,3 +229,66 @@ hr {
     padding: 1rem; }
     .my-profile-container .my-profile-information:last-child {
       margin-right: 0; }
+
+.one-profile {
+  background-color: #fee7f6;
+  padding: 2rem;
+  width: 80%;
+  position: relative;
+  top: 7rem;
+  left: 10%; }
+  .one-profile p {
+    display: inline-block; }
+  .one-profile span {
+    margin: 0 1rem; }
+  .one-profile .one-profile-summary img {
+    display: inline; }
+  .one-profile .one-profile-pop {
+    color: blue; }
+  .one-profile .one-profile-likes {
+    color: red; }
+  .one-profile button {
+    background-color: red;
+    margin: 0 1rem; }
+
+.profile-list {
+  width: 35%;
+  height: 100vh;
+  display: inline-block;
+  background-color: #f5d6eb; }
+
+.profile-preview {
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  width: 60%;
+  text-align: center;
+  background-color: #1c3653;
+  color: rgba(255, 255, 255, 0.7); }
+  .profile-preview img {
+    display: inline-block;
+    margin: 0 1rem;
+    border-radius: 1rem; }
+
+.profile-selection {
+  height: 100vh;
+  width: 65%;
+  float: right;
+  background-image: url("../resources/imgs/browse-background.jpg");
+  background-size: cover; }
+  .profile-selection h5 {
+    text-align: center;
+    margin: .1rem 0; }
+
+.search-box {
+  background-color: #fee7f6;
+  padding: 2rem;
+  width: 90%;
+  position: relative;
+  top: 7rem;
+  left: 5%; }
+
+.sort-menu li {
+  display: inline;
+  border-bottom: .1rem solid gray;
+  margin: .2rem .2rem; }

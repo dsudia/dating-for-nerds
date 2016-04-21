@@ -60,3 +60,30 @@
   background-image: url('../resources/imgs/browse-background.jpg');
   background-size: cover;
 }
+
+.one-profile {
+  background-color: saturate(lighten(#f5d6eb, 5%), 30%);
+  padding: 2rem;
+  width: 80%;
+  position: relative;
+  top: 7rem;
+  left: 10%;
+  p {
+    display: inline-block;
+  }
+  span {
+    margin: 0 .2rem;
+  }
+  .one-profile-block {
+    float: right;
+  }
+  .one-profile-pop {
+    color: blue;
+  }
+  .one-profile-likes {
+    color: red;
+  }
+  button {
+    background-color: red;
+  }
+}

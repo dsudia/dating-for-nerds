@@ -234,3 +234,23 @@ hr {
   float: right;
   background-image: url("../resources/imgs/browse-background.jpg");
   background-size: cover; }
+
+.one-profile {
+  background-color: #fee7f6;
+  padding: 2rem;
+  width: 80%;
+  position: relative;
+  top: 7rem;
+  left: 10%; }
+  .one-profile p {
+    display: inline-block; }
+  .one-profile span {
+    margin: 0 .2rem; }
+  .one-profile .one-profile-block {
+    float: right; }
+  .one-profile .one-profile-pop {
+    color: blue; }
+  .one-profile .one-profile-likes {
+    color: red; }
+  .one-profile button {
+    background-color: red; }

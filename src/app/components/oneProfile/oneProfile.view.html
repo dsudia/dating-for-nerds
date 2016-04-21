@@ -1,11 +1,16 @@
 <article class="one-profile">
-  <img ng-src="{{profile.avatar}}">
-  <h5>{{profile.username}}</h5>
-  <p><span>Popular</span><span>Near You!</span><span>Likes you!</span></p>
-  <button>Match Me!</button>
-  <i class="fa fa-heart" aria-hidden="true"></i>
-  <hr>
-  <section class="conversation">
+  <section class="one-profile-summary">
+    <img ng-src="{{profile.avatar}}">
+    <section class="one-profile-block">
+      <h5>{{profile.username}}</h5>
+      <p><span class="one-profile-pop">Popular</span><span class="one-profile-near">Near You!</span><span class="one-profile-likes">Likes you!</span></p>
+      <button ng-show="(profile._matches.indexOf(currentUser._id) === -1)" class="one-profile-match-button">Match Me!</button>
+      <i ng-hide="(profile._matches.indexOf(currentUser._id) === -1)" class="fa fa-heart one-profile-matched" aria-hidden="true"></i>
+    </section>
+    <hr>
+  </section>
+
+  <section class="one-profile-conversation">
 
   </section>
 </article>

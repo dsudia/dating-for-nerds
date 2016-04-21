@@ -25,7 +25,7 @@
       })
       .state('browse.profile', {
         url: '/profile/:user',
-        template: '<oneProfile></oneProfile>'
+        template: '<one-profile></one-profile>'
       });
   });
 
